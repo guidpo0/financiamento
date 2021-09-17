@@ -4,46 +4,66 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" src="style.css">
+  <link rel="stylesheet" href="./style.css">
   <title>Financiamento</title>
 </head>
 <body>
   <header>
     <h1>Simulação de Financiamento</h1>
-    <button><img src="./images/info.png" alt="botao de mais informações"></button>
-    <!-- <p>
-      Cálculos feitos de acordo com o Sistema de Amortizações Constantes (SAC)
-    </p> Colocar texto ao apertar a imagem -->
+    <button class="open-info-button"><img src="./images/info.png" alt="botao de mais informações"></button>
+    <div class="info-container invisible">
+      <p>
+        Cálculos feitos de acordo com o Sistema de Amortizações Constantes (SAC)
+      </p>
+      <button class="close-info-button">X</button>
+    </div>
   </header>
   <main>
-    <form>
+    <form class="financing-form">
       <div>
         <label>
           Valor:
-          <input type="number">
+          <input
+            class="value-input"
+            type="number"
+            step="0.01"
+            required
+          >
         </label>
         <label>
           Prazo (anos):
-          <input type="number">
+          <input
+            class="term-years-input"
+            type="number"
+            required
+          >
         </label>
         <label>
           Juros ao ano:
-          <input type="number">
+          <input
+            class="interest-per-year-input"
+            type="number"
+            step="0.01"
+            required
+          >
         </label>
       </div>
-      <button type="button">Simular</button>
+      <button class="simulate-button" type="button">Simular</button>
     </form>
-    <section>
+    <section class="invisible">
       <h2>Resultados</h2>
       <div>
         <div>
           <h3>Prazo (meses):</h3>
+          <p class="term-months"/>
         </div>
         <div>
           <h3>Juros ao mês:</h3>
+          <p class="interest-per-month"/>
         </div>
         <div>
           <h3>Juros acumulados:</h3>
+          <p class="accrued-interest"/>
         </div>
       </div>
       <table>
