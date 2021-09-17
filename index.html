@@ -10,27 +10,58 @@
 <body>
   <header>
     <h1>Simulação de Financiamento</h1>
-    <!-- <button> Colocar imagem de i de informações no bg -->
+    <button><img src="./images/info.png" alt="botao de mais informações"></button>
     <!-- <p>
       Cálculos feitos de acordo com o Sistema de Amortizações Constantes (SAC)
     </p> Colocar texto ao apertar a imagem -->
   </header>
   <main>
     <form>
-      <label>
-        Valor:
-        <input type="number">
-      </label>
-      <label>
-        Prazo(anos):
-        <input type="number">
-      </label>
-      <label>
-        Juros ao ano:
-        <input type="number">
-      </label>
+      <div>
+        <label>
+          Valor:
+          <input type="number">
+        </label>
+        <label>
+          Prazo (anos):
+          <input type="number">
+        </label>
+        <label>
+          Juros ao ano:
+          <input type="number">
+        </label>
+      </div>
       <button type="button">Simular</button>
     </form>
+    <section>
+      <h2>Resultados</h2>
+      <div>
+        <div>
+          <h3>Prazo (meses):</h3>
+        </div>
+        <div>
+          <h3>Juros ao mês:</h3>
+        </div>
+        <div>
+          <h3>Juros acumulados:</h3>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Prestação</th>
+            <th>Amortização</th>
+            <th>Juros</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>here</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </main>
   <script type="text/javascript" src="script.js"></script>
 </body>
