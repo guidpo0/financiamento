@@ -13,6 +13,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  background: rgba(28, 133, 134, 0.23);
 }
 
 header {
@@ -21,8 +22,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 10px;
-  margin-bottom: 50px;
-  margin-top: 30px;
+  margin: 30px 0;
   position: relative;
   width: 100%;
 }
@@ -83,4 +83,54 @@ header {
 
 .visible {
   display: initial;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100vw;
+  padding: 10px;
+}
+
+.financing-form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100vw;
+}
+
+.financing-form label {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+  align-items: center;
+}
+
+.financing-form label p {
+  min-width: 150px;
+}
+
+.financing-form label input {
+  padding: 10px;
+  background-color: rgba(109, 109, 109, 0.07);
+  margin: 10px;
+  max-width: calc(100% - 200px);
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.simulate-button {
+  background: none;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 500;
+  letter-spacing: 3px;
+  border-radius: 2px;
+  padding: 10px 20px;
+  margin: 40px 20px;
+  border: 1px solid black;
 }
