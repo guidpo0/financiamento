@@ -90,7 +90,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 100vw;
+  width: 100vw;
   padding: 10px;
 }
 
@@ -133,4 +133,25 @@ main {
   padding: 10px 20px;
   margin: 40px 20px;
   border: 1px solid black;
+}
+
+.results-container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+  flex-direction: column;
+}
+
+.results-container h2 {
+  margin-bottom: 10px;
+}
+
+.results-info-container > * {
+  margin: 20px;
+}
+
+.results-container table {
+  width: 80vw;
 }
