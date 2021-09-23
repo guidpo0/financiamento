@@ -135,7 +135,7 @@ main {
   border: 1px solid black;
 }
 
-.results-container {
+.results-container-section {
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -144,14 +144,14 @@ main {
   flex-direction: column;
 }
 
-.results-container h2 {
+.results-container-section h2 {
   margin-bottom: 10px;
 }
 
-.results-info-container > * {
+.results-info-container-section > * {
   margin: 20px;
 }
 
-.results-container table {
+.results-container-section table {
   width: 80vw;
 }

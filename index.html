@@ -59,34 +59,36 @@
       </div>
       <button class="simulate-button" type="button">Simular</button>
     </form>
-    <section class="results-container invisible">
-      <h2>Resultados</h2>
-      <div class="results-info-container">
-        <div>
-          <h3>Prazo (meses):</h3>
-          <p class="term-months"/>
+    <div class="results-container invisible">
+      <section class="results-container-section">
+        <h2>Resultados</h2>
+        <div class="results-info-container">
+          <div>
+            <h3>Prazo (meses):</h3>
+            <p class="term-months"/>
+          </div>
+          <div>
+            <h3>Juros ao mês:</h3>
+            <p class="interest-per-month"/>
+          </div>
+          <div>
+            <h3>Juros acumulados:</h3>
+            <p class="accrued-interest"/>
+          </div>
         </div>
-        <div>
-          <h3>Juros ao mês:</h3>
-          <p class="interest-per-month"/>
-        </div>
-        <div>
-          <h3>Juros acumulados:</h3>
-          <p class="accrued-interest"/>
-        </div>
-      </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Prestação</th>
-            <th>Amortização</th>
-            <th>Juros</th>
-            <th>Total</th>
-          </tr>
-        </thead>
-        <tbody class="table-body"/>
-      </table>
-    </section>
+        <table>
+          <thead>
+            <tr>
+              <th>Prestação</th>
+              <th>Amortização</th>
+              <th>Juros</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody class="table-body"/>
+        </table>
+      </section>
+    </div>
   </main>
   <script type="text/javascript" src="script.js"></script>
 </body>
