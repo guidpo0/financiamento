@@ -146,12 +146,26 @@ main {
 
 .results-container-section h2 {
   margin-bottom: 10px;
+  font-size: 1.8em;
 }
 
-.results-info-container-section > * {
+.results-info-container > * {
   margin: 20px;
 }
 
 .results-container-section table {
   width: 80vw;
+  border-spacing: 0;
+  border-collapse: collapse;
+  padding: 20px;
+}
+
+td {
+  padding: 1em 0.4em;
+  border-bottom: 1px solid black;
+}
+
+th {
+  padding: 1em 0.4em;
+  border-bottom: 1px solid black;
 }
